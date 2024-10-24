@@ -1,0 +1,19 @@
+{
+  "name": "404 Not Found",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "description": "A web extension that replaces the page that returned a 404 error for a functional version (if possible).",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  }
+}
